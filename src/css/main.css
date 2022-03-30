@@ -1,7 +1,29 @@
+/*Custom Properties*/
+:root{
+  --orange: hsl(37, 90%, 59%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --heading-font-family: 'Merriweather', serif;
+  --subheading-font-family: 'Roboto Slab', serif;
+  --body-font-family: "Nunito", sans-serif;
+}
 /* Decent Defaults */
 
 img,
 video {
   width: 100%;
   height: auto;
+}
+/* Mobile Only Styles */
+@media (max-width: 47.9375em) {
+
+  .sm\:text-center {
+    text-align: center;
+  }
+}
+
+/* Desktop Only Styles */
+@media (min-width: 48em) {
+  .sm\:text-center {
+    text-align: center;
 }
