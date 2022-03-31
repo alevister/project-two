@@ -66,7 +66,26 @@ header {
   padding: 0 0.5rem;
   max-width: 70rem;
 }
-
+.container-2 {
+  gap: 0.5rem;
+  padding-top: 10rem;
+  padding-left: 12rem;
+  padding-right: 17rem;
+  padding-bottom: 20rem;
+}
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: grid;
+  gap: 2rem;
+}
+.gallery:nth-child(3n + 1) {
+  grid-row-end: span 2;
+}
+.gallery:nth-child(2n + 2) {
+  grid-column-end: span 2;
+}
 .navbar {
   background-color: black;
   color: white;
@@ -121,7 +140,6 @@ header {
   padding-bottom: 0.1rem;
 }
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -182,6 +200,9 @@ figcaption {
   }
   p {
     font-size: 1.5rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
