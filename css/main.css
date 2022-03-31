@@ -14,11 +14,51 @@ video {
   width: 100%;
   height: auto;
 }
-/*Container jolding image text*/
+/*Container holding image text*/
+
+header {
+  background: hsl(0, 0%, 0%);
+}
 .container {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: black;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  width: 100%;
+  text-align: end;
+  padding-top: 5px;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 1rem 3rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--orange);
+}
+
+.primary-icon {
+  height: 50px;
 }
 
 /* centered text*/
@@ -28,10 +68,36 @@ video {
   left: 55%;
   transform: translate(-50%, -50%);
 }
+@media all and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-list .list-item {
+    padding: 0.2rem 0.1rem;
+    display: flex;
+  }
+}
+.footer-container {
+  background-color: black;
+  padding-bottom: 0.1rem;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
 /* Mobile Only Styles */
 @media (max-width: 47.9375em) {
   .sm\:text-center {
     text-align: center;
+  }
+  .primary-icon {
+    height: 25px;
   }
 }
 
