@@ -10,6 +10,7 @@
 /* Decent Defaults */
 p {
   font-size: 1.2rem;
+  font-family: var(--body-font-family);
 }
 h1 {
   margin: 2rem 0 1.38rem;
@@ -134,8 +135,11 @@ header {
   gap: 0 1rem;
 }
 .card {
-  padding: 1rem;
+  padding: 0.2rem;
   margin: 10%;
+}
+.card-1 {
+  text-align: center;
 }
 
 .resize {
