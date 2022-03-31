@@ -33,16 +33,14 @@ img,
 video {
   width: 100%;
   height: auto;
+  border: 5px black;
 }
 .textoverlay {
-  position: relative;
   width: 100%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 .overlay-title {
-  position: absolute;
   top: 125px;
   left: 40rem;
   color: black;
@@ -53,6 +51,61 @@ video {
   left: 36rem;
   color: black;
 }
+
+.accordian {
+  max-width: 400px;
+  box-shadow: 0 0 10px hsl(0, 0%, 0%);
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: var(--body-font-family);
+  background: hsl(37, 90%, 59%);
+}
+
+.accordian__label,
+.accordian__content {
+  padding: 14px 20px;
+}
+
+.accordian__label {
+  display: block;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+}
+.accordian__label:hover {
+  background: hsl(37, 90%, 59%);
+}
+.accordian__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  transition: transform 0.4s;
+}
+.accordion__content {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
 /*Container holding image text*/
 
 header {
@@ -140,12 +193,15 @@ header {
   padding-bottom: 0.1rem;
 }
 .footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: black;
   color: white;
-  text-align: center;
+  justify-content: space-between;
 }
 .flex {
   display: flex;
@@ -165,6 +221,17 @@ header {
   max-width: 1250px;
   padding-left: 200px;
 }
+
+.card-3 {
+  text-align: left;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 2%;
+}
+.card-4 {
+  display: inline-block;
+}
+
 .yellow {
   color: var(--orange);
 }
