@@ -1,10 +1,10 @@
 /*Custom Properties*/
-:root{
+:root {
   --orange: hsl(37, 90%, 59%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
-  --heading-font-family: 'Merriweather', serif;
-  --subheading-font-family: 'Roboto Slab', serif;
+  --heading-font-family: "Merriweather", serif;
+  --subheading-font-family: "Roboto Slab", serif;
   --body-font-family: "Nunito", sans-serif;
 }
 /* Decent Defaults */
@@ -14,9 +14,22 @@ video {
   width: 100%;
   height: auto;
 }
+/*Container jolding image text*/
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* centered text*/
+.centered {
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
 /* Mobile Only Styles */
 @media (max-width: 47.9375em) {
-
   .sm\:text-center {
     text-align: center;
   }
@@ -26,4 +39,5 @@ video {
 @media (min-width: 48em) {
   .sm\:text-center {
     text-align: center;
+  }
 }
