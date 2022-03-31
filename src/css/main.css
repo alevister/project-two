@@ -141,11 +141,33 @@ header {
 .card-1 {
   text-align: center;
 }
+.card-2 {
+  display: inline-block;
+  margin: 1%;
+  max-width: 1250px;
+  padding-left: 200px;
+}
+.yellow {
+  color: var(--orange);
+}
 
 .resize {
   float: left;
   width: 400px;
   padding: 0 60px 20px 0;
+}
+
+.adjust {
+  width: 1500px;
+  height: 900px;
+  padding-left: 8%;
+  padding-right: 3%;
+}
+figcaption {
+  color: black;
+  font-family: var(--body-font-family);
+  padding-left: 8%;
+  padding-right: 8%;
 }
 /* Mobile Only Styles */
 @media (max-width: 47.9375em) {
