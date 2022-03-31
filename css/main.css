@@ -8,11 +8,49 @@
   --body-font-family: "Nunito", sans-serif;
 }
 /* Decent Defaults */
+p {
+  font-size: 1.2rem;
+}
+h1 {
+  margin: 2rem 0 1.38rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--black);
+  padding-top: 20px;
+}
+h2 {
+  margin: 2rem 5 1.5rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  line-height: normal;
+  color: var(--black);
+  padding-top: 5px;
+}
 
 img,
 video {
   width: 100%;
   height: auto;
+}
+.textoverlay {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.overlay-title {
+  position: absolute;
+  top: 125px;
+  left: 40rem;
+  color: black;
+}
+.overlay-subtitle {
+  position: absolute;
+  bottom: 350px;
+  left: 36rem;
+  color: black;
 }
 /*Container holding image text*/
 
@@ -23,11 +61,11 @@ header {
   position: relative;
   text-align: left;
   color: black;
+  margin: auto;
+  padding: 0 0.5rem;
+  max-width: 70rem;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
+
 .navbar {
   background-color: black;
   color: white;
@@ -90,14 +128,34 @@ header {
   color: white;
   text-align: center;
 }
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0 1rem;
+}
+.card {
+  padding: 1rem;
+  margin: 10%;
+}
 
+.resize {
+  float: left;
+  width: 400px;
+  padding: 0 60px 20px 0;
+}
 /* Mobile Only Styles */
 @media (max-width: 47.9375em) {
   .sm\:text-center {
     text-align: center;
   }
+  .flex {
+    flex-direction: column;
+  }
   .primary-icon {
     height: 25px;
+  }
+  p {
+    font-size: 1.5rem;
   }
 }
 
@@ -105,5 +163,14 @@ header {
 @media (min-width: 48em) {
   .sm\:text-center {
     text-align: center;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .flex {
+    gap: 0 1rem;
+  }
+  .flex > * {
+    width: 100%;
   }
 }
