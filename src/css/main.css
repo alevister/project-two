@@ -185,8 +185,8 @@ header {
 .card-2 {
   display: inline-block;
   margin: 1%;
-  max-width: 1250px;
-  padding-left: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .card-3 {
@@ -209,6 +209,11 @@ header {
   padding: 0 60px 20px 0;
 }
 
+.resize-2 {
+  float: left;
+  width: auto;
+}
+
 .adjust {
   width: 1400px;
   height: 800px;
@@ -225,7 +230,7 @@ td {
 }
 table,
 td {
-  border: 1px solid#000;
+  border: 1px solid #000;
   border-collapse: collapse;
 }
 td {
@@ -265,8 +270,11 @@ figcaption {
   p {
     font-size: 1.5rem;
   }
-  .gallery {
-    grid-template-columns: repeat(1, 1fr);
+  .card-2 {
+    display: inline-block;
+    margin: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
